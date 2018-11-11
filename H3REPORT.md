@@ -114,3 +114,11 @@ figlet:
    - source: salt://figlet/new-bashrc
 
 After running 'sudo salt azazel state.apply figlet' the message could be read in the terminal of my minion.
+
+
+#sources
+
+- http://terokarvinen.com/2018/aikataulu-%e2%80%93-palvelinten-hallinta-ict4tn022-3004-ti-ja-3002-to-%e2%80%93-loppukevat-2018-5p
+- https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase
+- http://terokarvinen.com/2016/publish-your-project-with-github
+
