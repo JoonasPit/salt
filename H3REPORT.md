@@ -27,4 +27,4 @@ I struggled for a while because I kept getting the "can't merge unrelated histor
 
 'git pull <name> --allow-unrelated-histories' which worked like a dream and I got the licence file from the github repository added to my salt folder.
 
-After this I ran 'sudo git push <the link to my repository>' gave my username and password and voila the components of the /srv/salt folder became a part of the repository.
+After this I ran 'sudo git push <the link to my repository> master' gave my username and password and voila the components of the /srv/salt folder became a part of the repository.
