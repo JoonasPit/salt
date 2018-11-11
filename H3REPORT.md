@@ -78,3 +78,15 @@ index 703717a..5bd5829 100644
 The +-signs show which lines were added between commits.
 
 # E) Something stupid 'git reset hard'
+
+This task had us do something stupid in the /srv/salt/ folder and then reset it before committing.
+
+I simply changed the top.sls files name to top.blaablaa.
+
+Then I ran 'git add .' and before running 'git commit' I decided to reset and ran 
+
+'git reset --hard' the result was a return to a previous state.
+
+joonas@joonas:/srv/salt$ sudo git reset --hard
+HEAD is now at 52756cf Merge https://github.com/JoonasPit/salt
+
