@@ -6,6 +6,8 @@ the exercise goes on.
 
 The minion used was a virtualbox xubuntu 18.04 LTS machine called azazel.
 
+To read this article with pictures go to my website https://www.bloglinux.me/node/12
+
 # C) Put the /srv/salt/ folder in to github.
 
 I started the exercise by running the git --conf user.email and user.name commands to create a git user on my personal machine
