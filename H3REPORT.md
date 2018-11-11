@@ -43,6 +43,8 @@ Date:   Sun Nov 11 14:57:31 2018 +0200
 
     Added a word to H3.md
 
+# git log and git blame
+
 As you can see the first row is what file we're talking about (happens to be this file). The second row Author is pretty self explanatory as it's who made the change.
 
 Date specifies When the change was made, and the last line is what I wrote after the 'git commit' command to tell what I changed in the file.
@@ -54,3 +56,25 @@ Now After this I ran git blame master H3REPORT.md to see changes made to the fil
 This was more specific about what had been edited and at what time. It also showed the specific line that had been edited.
 
 (Stopped doing the assingment due to father's day dinner)
+
+# git diff
+
+'git diff <file>' is used to see changes between commits. 
+
+I used this file again to see the changes I'd made. After running 'git diff H3REPORT.md' the response was.
+
+diff --git a/H3REPORT.md b/H3REPORT.md
+index 703717a..5bd5829 100644
+--- a/H3REPORT.md
++++ b/H3REPORT.md
+@@ -54,3 +54,6 @@ Now After this I ran git blame master H3REPORT.md to see changes made to the fil
+ This was more specific about what had been edited and at what time. It also showed the specific line that had been edited.
+ 
+ (Stopped doing the assingment due to father's day dinner)
++
++
++A change
+
+The +-signs show which lines were added between commits.
+
+# E) Something stupid 'git reset hard'
