@@ -2,9 +2,9 @@
 
 This was all written in markdown, as the assignment ordered.
 The machine used for the assigment was my Acer Aspire V laptop running a Xubuntu 18.04 LTS OS. Minions will be reported later on as
-
 the exercise goes on.
 
+The minion used was a virtualbox xubuntu 18.04 LTS machine called azazel.
 
 # C) Put the /srv/salt/ folder in to github.
 
@@ -90,3 +90,27 @@ Then I ran 'git add .' and before running 'git commit' I decided to reset and ra
 joonas@joonas:/srv/salt$ sudo git reset --hard
 HEAD is now at 52756cf Merge https://github.com/JoonasPit/salt
 
+# F) A new module
+
+The goal of this exercise was just to create a new salt module.
+
+The module I chose to create was a quick banner Hello for my minions with figlet.
+
+First I made a folder with 'mkdir figlet'. Inside it I created the init.sls file and the necessary new bash.bashrc file named new-bashrc.
+
+The bashrc remained otherwise unchanged but at the end of the script I added 
+
+
+clear
+figlet -f standard "Hello My Minion"
+
+The init.sls file simply read 
+
+figlet:
+  pkg.installed
+
+/etc/bash.bashrc:
+   file.managed:
+   - source: salt://figlet/new-bashrc
+
+After running 'sudo salt azazel state.apply figlet' the message could be read in the terminal of my minion.
