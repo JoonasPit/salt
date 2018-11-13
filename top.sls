@@ -5,3 +5,6 @@ base:
   'apolyon':
     - apache
     - skeletor
+    - usercreate
+    - sysstat
+    - figlet
